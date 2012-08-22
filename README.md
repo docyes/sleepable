@@ -24,11 +24,10 @@ var View = Backbone.SleepableView.extend({
             return n;
         } else {
             return fib(n-1) + fib(n-2);
-                                                                }
         }
     },
     render: function() {
-        this.$el.html(fib(this.model.get('n')));
+        this.$el.html(this.fib(this.model.get('n')));
     }
 
 });
@@ -39,6 +38,7 @@ view.sleep();
 for (var i=0; i<100000; i++) {
     model.set('n', i);
 }
+model.set('n', 10);
 view.wake();
 console.log(view.$el.html());
 ```
