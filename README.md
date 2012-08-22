@@ -1,7 +1,7 @@
 Backbone.SleepableView
 =========
 
-A simplistic Backbone View extension enabling the toggling of render as a an op (awake) or no-op (sleeping) routine.
+A simplistic Backbone View extension enabling the toggling of render as an op (awake) or no-op (sleeping) routine.
 <pre>
            __..--''``\--....___   _..,_
        _.-'    .-/";  `        ``&lt;._  ``-+'~=.
