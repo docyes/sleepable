@@ -1,9 +1,10 @@
 Backbone.SleepableView = Backbone.View.extend({
-    awake: true,
     touch: false,
-    initialize: function() {
-        var render = this.render;
-        this.children = {};
+    initialize: function(options) {
+        var options = options || {},
+            render = this.render;
+        this.children = options.children || {};
+        this.awake = _.has(options, 'awake') ? options.awake : true;
         this.render = _.bind(function() {
             if (this.awake) {
                 render.apply(this);
