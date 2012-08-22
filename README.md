@@ -1,4 +1,5 @@
-sleepable
+Backbone.SleepableView
 =========
 
-Backbone Sleepable View
+A simplistic Backbone View extension enabling the toggling of render as a an op (awake) or no-op (sleeping) routine.
+
